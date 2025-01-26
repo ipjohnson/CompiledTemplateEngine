@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DependencyModules.Runtime" Version="1.0.0-RC9015" />
+        <PackageReference Include="DependencyModules.SourceGenerator" Version="1.0.0-RC9015" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CompiledTemplateEngine.Runtime\CompiledTemplateEngine.Runtime.csproj" />
+      <ProjectReference Include="..\CompiledTemplateEngine.SourceGenerator\CompiledTemplateEngine.SourceGenerator.csproj" 
+                        OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Views\**\*.html" />
+      <AdditionalFiles Include="Views\**\*.html">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </AdditionalFiles>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DependencyModules.Runtime" Version="1.0.0-RC9015" />
+        <PackageReference Include="DependencyModules.SourceGenerator" Version="1.0.0-RC9015">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>build</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="DependencyModules.Testing" Version="1.0.0-RC9015" />
+        <PackageReference Include="DependencyModules.Testing.NSubstitute" Version="1.0.0-RC9015" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="3.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="xunit.v3" Version="1.0.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\CompiledTemplateEngine.Runtime\CompiledTemplateEngine.Runtime.csproj" />
+    </ItemGroup>
+
+</Project>

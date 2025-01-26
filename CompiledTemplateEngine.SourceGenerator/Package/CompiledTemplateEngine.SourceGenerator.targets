@@ -1,0 +1,6 @@
+<Project>
+    <ItemGroup >
+        <CompilerVisibleProperty Include="SkipTemplate"/>
+        <CompilerVisibleProperty Include="CompileTemplateExtensions"/>
+    </ItemGroup>
+</Project>
