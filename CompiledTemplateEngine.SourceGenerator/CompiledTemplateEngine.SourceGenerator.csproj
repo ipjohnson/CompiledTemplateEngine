@@ -16,7 +16,7 @@
     </PropertyGroup>
 
 
-    <Import Project="../build/nuget.props"/>
+    <Import Project="../build-props/nuget.props"/>
     
     <ItemGroup>
       <PackageReference Include="DependencyModules.SourceGenerator.Impl" Version="1.0.0-RC9015">

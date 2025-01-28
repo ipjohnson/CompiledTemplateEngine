@@ -1,0 +1,11 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Ian Johnson</Authors>
+        <PackageTags>dependency injection</PackageTags>
+        <PackageProjectUrl>https://github.com/ipjohnson/CompiledTemplateEngine</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/ipjohnson/CompiledTemplateEngine</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    </PropertyGroup>
+</Project>
