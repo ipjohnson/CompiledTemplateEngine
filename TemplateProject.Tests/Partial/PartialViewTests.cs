@@ -1,4 +1,6 @@
+using DependencyModules.Runtime;
 using DependencyModules.Testing.Attributes;
+using Microsoft.Extensions.DependencyInjection;
 using TemplateProject.Models;
 using Xunit;
 
@@ -19,5 +21,18 @@ public class PartialViewTests {
 
         Assert.NotNull(result);
         Assert.Equal("\n<div>Hello World</div>", result);
+    }
+
+    [Fact]
+    public async Task Test() {
+        var serviceCollection = new ServiceCollection();
+        serviceCollection.AddModule(new Templates());
+        var provider = serviceCollection.BuildServiceProvider();
+
+        var invoker = provider.GetRequiredService<Templates.IInvoker>();
+        
+        var output = await invoker.RootTemplate(new HelloWorldModel("Hello", "World"));
+        
+        Assert.Contains("Hello World", output);
     }
 }

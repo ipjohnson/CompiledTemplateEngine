@@ -4,7 +4,11 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <PackageId>CompiledTemplateEngine.Runtime</PackageId>
     </PropertyGroup>
+    
+    <Import Project="../build/nuget.props"/>
     
     <ItemGroup>
       <PackageReference Include="DependencyModules.Runtime" Version="1.0.0-RC9015" />

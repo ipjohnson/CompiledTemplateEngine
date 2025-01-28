@@ -8,12 +8,16 @@
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <IsPackable>True</IsPackable>
         <Nullable>enable</Nullable>
+        <PackageId>CompiledTemplateEngine.SourceGenerator</PackageId>
     </PropertyGroup>
 
     <PropertyGroup>
         <PackageDependencyModuleIncludeSource>true</PackageDependencyModuleIncludeSource>
     </PropertyGroup>
 
+
+    <Import Project="../build/nuget.props"/>
+    
     <ItemGroup>
       <PackageReference Include="DependencyModules.SourceGenerator.Impl" Version="1.0.0-RC9015">
           <PrivateAssets>all</PrivateAssets>
