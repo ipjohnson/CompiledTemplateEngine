@@ -8,4 +8,13 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="">
+            <Link>Properties\README.md</Link>
+        </None>
+        <None Include="..\LICENSE.txt" Pack="true" PackagePath="">
+            <Link>Properties\License.txt</Link>
+        </None>
+    </ItemGroup>
 </Project>
