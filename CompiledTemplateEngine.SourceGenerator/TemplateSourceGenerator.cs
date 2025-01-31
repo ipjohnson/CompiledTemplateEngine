@@ -14,10 +14,11 @@ public class TemplateSourceGenerator : BaseSourceGenerator {
         yield return new TemplateModuleSourceGenerator();
     }
 
-    protected override void SetupRootGenerator(IncrementalGeneratorInitializationContext context,
-        IncrementalValuesProvider<ModuleEntryPointModel> incrementalValueProvider) {
-        var generator = new TemplateDependencyInjectionGenerator();
+    protected override void SetupRootGenerator(
+        IncrementalGeneratorInitializationContext context, 
+        IncrementalValuesProvider<(ModuleEntryPointModel Left, DependencyModuleConfigurationModel Right)> valuesProvider) {
+            var generator = new TemplateDependencyInjectionGenerator();
         
-        context.RegisterSourceOutput(incrementalValueProvider, generator.Generate);
+            context.RegisterSourceOutput(valuesProvider, generator.Generate);
     }
 }

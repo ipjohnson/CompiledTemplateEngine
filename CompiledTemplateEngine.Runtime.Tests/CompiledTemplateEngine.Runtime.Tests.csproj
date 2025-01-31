@@ -7,13 +7,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="DependencyModules.Runtime" Version="1.0.0-RC9015" />
-        <PackageReference Include="DependencyModules.SourceGenerator" Version="1.0.0-RC9015">
+        <PackageReference Include="DependencyModules.Runtime" Version="1.0.0-RC9022" />
+        <PackageReference Include="DependencyModules.SourceGenerator" Version="1.0.0-RC9022">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>build</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="DependencyModules.Testing" Version="1.0.0-RC9015" />
-        <PackageReference Include="DependencyModules.Testing.NSubstitute" Version="1.0.0-RC9015" />
+        <PackageReference Include="DependencyModules.Testing" Version="1.0.0-RC9022" />
+        <PackageReference Include="DependencyModules.Testing.NSubstitute" Version="1.0.0-RC9022" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
         <PackageReference Include="xunit.runner.visualstudio" Version="3.0.0">
             <PrivateAssets>all</PrivateAssets>

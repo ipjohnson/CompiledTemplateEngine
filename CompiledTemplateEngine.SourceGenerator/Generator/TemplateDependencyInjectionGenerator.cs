@@ -7,7 +7,10 @@ namespace CompiledTemplateEngine.SourceGenerator.Generator;
 
 public class TemplateDependencyInjectionGenerator {
 
-    public void Generate(SourceProductionContext context, ModuleEntryPointModel model) {
+    public void Generate(SourceProductionContext context,
+        (ModuleEntryPointModel Left, DependencyModuleConfigurationModel Right)  data) {
+        var model = data.Left;
+        
         if (!EntryModelSelector.ModelIsAttributed(model)) {
             return;
         }

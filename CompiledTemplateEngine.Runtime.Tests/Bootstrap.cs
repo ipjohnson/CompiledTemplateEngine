@@ -2,5 +2,5 @@
 using DependencyModules.Testing.Attributes;
 using DependencyModules.Testing.NSubstitute;
 
-[assembly: LoadModules(typeof(CompiledTemplateEngineRuntime))]
+[assembly: CompiledTemplateEngineRuntime.Module]
 [assembly: NSubstituteSupport]
