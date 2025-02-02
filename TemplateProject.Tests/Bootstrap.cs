@@ -1,5 +1,4 @@
-using DependencyModules.Testing.Attributes;
-using DependencyModules.Testing.NSubstitute;
+using DependencyModules.xUnit.NSubstitute;
 using TemplateProject;
 
 [assembly: Templates.Module]

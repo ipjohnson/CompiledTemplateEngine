@@ -1,6 +1,5 @@
 ﻿using CompiledTemplateEngine.Runtime;
-using DependencyModules.Testing.Attributes;
-using DependencyModules.Testing.NSubstitute;
+using DependencyModules.xUnit.NSubstitute;
 
 [assembly: CompiledTemplateEngineRuntime.Module]
 [assembly: NSubstituteSupport]

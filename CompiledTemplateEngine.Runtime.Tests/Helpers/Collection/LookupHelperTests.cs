@@ -1,7 +1,7 @@
 ﻿using CompiledTemplateEngine.Runtime.Helpers;
 using CompiledTemplateEngine.Runtime.Helpers.Collection;
 using CompiledTemplateEngine.Runtime.Interfaces;
-using DependencyModules.Testing.Attributes;
+using DependencyModules.xUnit.Attributes;
 using NSubstitute;
 using Xunit;
 

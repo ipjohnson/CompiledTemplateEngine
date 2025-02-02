@@ -1,5 +1,5 @@
 using CompiledTemplateEngine.Runtime.Interfaces;
-using DependencyModules.Testing.Attributes;
+using DependencyModules.xUnit.Attributes;
 using TemplateProject.Models;
 using Xunit;
 

@@ -1,5 +1,5 @@
 using DependencyModules.Runtime;
-using DependencyModules.Testing.Attributes;
+using DependencyModules.xUnit.Attributes;
 using Microsoft.Extensions.DependencyInjection;
 using TemplateProject.Models;
 using Xunit;
