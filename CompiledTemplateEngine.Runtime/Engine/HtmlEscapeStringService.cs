@@ -5,7 +5,7 @@ using DependencyModules.Runtime.Attributes;
 namespace CompiledTemplateEngine.Runtime.Engine;
 
 
-[SingletonService(ServiceType = typeof(IStringEscapeService))]
+[SingletonService]
 public class HtmlEscapeStringService : IStringEscapeService {
     public bool CanEscapeTemplate(string templateExtension) {
         return templateExtension.EndsWith("html");

@@ -4,7 +4,7 @@ namespace CompiledTemplateEngine.Runtime.Utilities;
 
 public interface IMemoryStreamPool : IItemPool<MemoryStream> { }
 
-[SingletonService(ServiceType = typeof(IMemoryStreamPool))]
+[SingletonService]
 public class MemoryStreamPool : ItemPool<MemoryStream>, IMemoryStreamPool {
     public MemoryStreamPool()
         : base(

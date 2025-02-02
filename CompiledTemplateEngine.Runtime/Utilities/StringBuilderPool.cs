@@ -5,7 +5,7 @@ namespace CompiledTemplateEngine.Runtime.Utilities;
 
 public interface IStringBuilderPool : IItemPool<StringBuilder> { }
 
-[SingletonService(ServiceType = typeof(IStringBuilderPool))]
+[SingletonService]
 public class StringBuilderPool : ItemPool<StringBuilder>, IStringBuilderPool {
     public StringBuilderPool() : this(2) { }
 

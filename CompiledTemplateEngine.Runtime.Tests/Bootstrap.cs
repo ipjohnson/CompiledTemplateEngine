@@ -1,5 +1,5 @@
 ﻿using CompiledTemplateEngine.Runtime;
 using DependencyModules.xUnit.NSubstitute;
 
-[assembly: CompiledTemplateEngineRuntime.Module]
+[assembly: CompiledTemplateEngineRuntime.Attribute]
 [assembly: NSubstituteSupport]

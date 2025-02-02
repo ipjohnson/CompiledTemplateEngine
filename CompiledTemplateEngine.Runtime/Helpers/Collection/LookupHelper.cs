@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using CompiledTemplateEngine.Runtime.Interfaces;
+using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Helpers.Collection;
 

@@ -3,7 +3,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Engine;
 
-[SingletonService(ServiceType = typeof(IDataFormattingService))]
+[SingletonService]
 public class DataFormattingService : IDataFormattingService {
     private readonly IDictionary<Type, FormatDataFunc> _formatters;
     private static readonly FormatDataFunc DefaultFormat = DefaultFormatMethod;

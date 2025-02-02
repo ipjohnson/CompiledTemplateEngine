@@ -8,7 +8,7 @@ namespace TemplateProject.Tests.Partial;
 
 public class PartialViewTests {
     [ModuleTest]
-    public async Task InvokeRoot(Templates.IInvoker invoker) {
+    public async Task InvokeRoot(TemplatesModule.IInvoker invoker) {
         var result = await invoker.RootTemplate(new HelloWorldModel("Hello", "World"));
 
         Assert.NotNull(result);
@@ -16,7 +16,7 @@ public class PartialViewTests {
     }
     
     [ModuleTest]
-    public async Task InvokePartial(Templates.IInvoker invoker) {
+    public async Task InvokePartial(TemplatesModule.IInvoker invoker) {
         var result = await invoker.PartialTemplate(new HelloWorldModel("Hello", "World"));
 
         Assert.NotNull(result);
@@ -26,10 +26,10 @@ public class PartialViewTests {
     [Fact]
     public async Task Test() {
         var serviceCollection = new ServiceCollection();
-        serviceCollection.AddModule(new Templates());
+        serviceCollection.AddModule(new TemplatesModule());
         var provider = serviceCollection.BuildServiceProvider();
 
-        var invoker = provider.GetRequiredService<Templates.IInvoker>();
+        var invoker = provider.GetRequiredService<TemplatesModule.IInvoker>();
         
         var output = await invoker.RootTemplate(new HelloWorldModel("Hello", "World"));
         

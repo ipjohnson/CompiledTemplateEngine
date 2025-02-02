@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Immutable;
 using CompiledTemplateEngine.Runtime.Interfaces;
+using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Helpers.Collection;
 

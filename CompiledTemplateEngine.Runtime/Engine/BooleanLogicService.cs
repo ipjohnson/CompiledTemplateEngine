@@ -4,7 +4,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Engine;
 
-[SingletonService(ServiceType = typeof(IBooleanLogicService))]
+[SingletonService]
 public class BooleanLogicService : IBooleanLogicService {
     public bool IsTrueValue(object value) {
         if (value == null) {

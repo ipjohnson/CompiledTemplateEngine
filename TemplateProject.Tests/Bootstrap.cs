@@ -1,5 +1,5 @@
 using DependencyModules.xUnit.NSubstitute;
 using TemplateProject;
 
-[assembly: Templates.Module]
+[assembly: TemplatesModule.Attribute]
 [assembly: NSubstituteSupport]

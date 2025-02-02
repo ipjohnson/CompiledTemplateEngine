@@ -4,7 +4,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Engine;
 
-[SingletonService(ServiceType = typeof(IInternalTemplateServices))]
+[SingletonService]
 public class InternalTemplateServices : IInternalTemplateServices {
     public InternalTemplateServices(
         IStringBuilderPool stringBuilderPool,

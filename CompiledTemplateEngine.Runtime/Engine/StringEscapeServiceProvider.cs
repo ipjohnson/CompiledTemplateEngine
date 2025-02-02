@@ -3,7 +3,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Engine;
 
-[SingletonService(ServiceType = typeof(IStringEscapeServiceProvider))]
+[SingletonService]
 public class StringEscapeServiceProvider : IStringEscapeServiceProvider {
     private readonly IEnumerable<IStringEscapeService> _escapeServices;
     private readonly NoopEscapeStringService _noopEscapeStringService = new ();

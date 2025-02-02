@@ -19,7 +19,7 @@ public class InvokeThroughEngineTests {
     }
 
     [ModuleTest]
-    public async Task InvokeUsingTemplateInvoker(Templates.IInvoker templateInvoker) {
+    public async Task InvokeUsingTemplateInvoker(TemplatesModule.IInvoker templateInvoker) {
         var result = await templateInvoker.HelloWorld(new HelloWorldModel("Hello", "World"));
         
         Assert.NotEmpty(result);

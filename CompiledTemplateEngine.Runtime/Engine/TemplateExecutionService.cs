@@ -6,7 +6,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Engine;
 
-[SingletonService(ServiceType = typeof(ITemplateExecutionService))]
+[SingletonService]
 public class TemplateExecutionService : ITemplateExecutionService {
     private static readonly object _emptyObject = new object();
     private static readonly ImmutableDictionary<string, object> _emptyData = 

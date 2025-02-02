@@ -3,7 +3,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Engine;
 
-[SingletonService(ServiceType = typeof(ITemplateHelperService))]
+[SingletonService]
 public class TemplateHelperService : ITemplateHelperService {
     private readonly IEnumerable<ITemplateHelperProvider> _providers;
 

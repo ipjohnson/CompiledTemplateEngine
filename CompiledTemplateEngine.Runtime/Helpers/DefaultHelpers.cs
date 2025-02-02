@@ -6,7 +6,7 @@ using DependencyModules.Runtime.Attributes;
 
 namespace CompiledTemplateEngine.Runtime.Helpers;
 
-[SingletonService(ServiceType = typeof(ITemplateHelperProvider))]
+[SingletonService]
 public partial class DefaultHelpers : ITemplateHelperProvider {
     private TemplateHelperFactory? _appendHelper;
     private TemplateHelperFactory? _concatHelper;
