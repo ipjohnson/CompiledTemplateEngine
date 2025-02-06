@@ -18,7 +18,7 @@ public class TemplateDependencyInjectionGenerator {
         var fileWriter = new DependencyFileWriter();
 
         var output =
-            fileWriter.Write(model, new DependencyModuleConfigurationModel(false), GetServiceModels(), "TemplateDeps");
+            fileWriter.Write(model, new DependencyModuleConfigurationModel(RegistrationType.Add), GetServiceModels(), "TemplateDeps");
 
         context.AddSource($"{model.EntryPointType.Name}.TemplateDeps.g.cs", output);
     }
