@@ -25,6 +25,7 @@ public class TemplateDependencyInjectionGenerator {
 
     private IEnumerable<ServiceModel> GetServiceModels() {
         yield return new ServiceModel(TypeDefinition.Get("", "InvokerImplementation"),
+            null,
             new[] {
                 new ServiceRegistrationModel(
                     TypeDefinition.Get(TypeDefinitionEnum.InterfaceDefinition, "", "IInvoker"),
@@ -33,6 +34,7 @@ public class TemplateDependencyInjectionGenerator {
                 )
             });
         yield return new ServiceModel(TypeDefinition.Get("", "TemplateProvider"),
+            null,
             new[] {
                 new ServiceRegistrationModel(
                     KnownTemplateTypes.Interfaces.ITemplateExecutionHandlerProvider,

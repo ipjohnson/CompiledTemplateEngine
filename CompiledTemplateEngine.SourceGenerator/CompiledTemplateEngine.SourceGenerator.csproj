@@ -19,7 +19,7 @@
     <Import Project="../build-props/nuget.props"/>
     
     <ItemGroup>
-      <PackageReference Include="DependencyModules.SourceGenerator.Impl" Version="1.0.0-RC9069">
+      <PackageReference Include="DependencyModules.SourceGenerator.Impl" Version="1.0.0-RC9075">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>build</IncludeAssets>
       </PackageReference>
